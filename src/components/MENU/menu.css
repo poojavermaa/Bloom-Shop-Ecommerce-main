@@ -1,0 +1,138 @@
+.main-menu {
+    background-color: rgba(0, 0, 0, 0.4);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 10;
+    width: 100vw;
+    display: flex;
+
+}
+
+.main-menu .left {
+    min-width: 350px;
+    background-color: #b6ede9;
+    color: black;
+    height: 100vh;
+    /* padding: 20px 0px; */
+    position: relative;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.main-menu .left .close-menu {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.main-menu .left h1 {
+    font-size: 1.5rem;
+}
+
+.main-menu .left ul {
+    list-style: none;
+}
+
+.main-menu .right {
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    height: 100vh;
+}
+
+.close-menu .close-icon {
+    font-size: 2rem;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+
+}
+
+
+.welcome {
+    height: 80px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* .menu-options div ul{
+
+} */
+
+
+
+
+.account,
+.order,
+.payment {
+    margin: 10px;
+    padding: 10px;
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.account ul,
+.order ul,
+.payment ul {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+    /* padding-left: 10px; */
+}
+
+.account ul li,
+.order ul li,
+.payment ul li {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    width: 100%;
+    padding: 5px 10px;
+}
+
+.account ul li:hover,
+.order ul li:hover,
+.payment ul li:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.account ul a,
+.order ul a,
+.payment ul a {
+    text-decoration: none;
+    color: black;
+    width: 100%;
+}
+
+
+
+
+@media screen and (max-width: 1000px) {
+    html {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .main-menu .left {
+        width: 200px;
+    }
+}
+
+
+
+/* 1rem = 16px */

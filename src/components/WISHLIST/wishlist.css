@@ -1,0 +1,98 @@
+.wishlist {
+    display: flex;
+    /* padding: 30px 0px; */
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 50px;
+    width: 100vw;
+    min-height: 550px;
+    /* background-color: pink; */
+}
+
+.w-main-body {
+    width: 88%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    /* background-color: red; */
+}
+
+/* .w-my-details {
+    font-family: 'Open Sans', sans-serif;
+    position: absolute;
+    left: -10px;
+    top: 0px;
+}
+
+.hello-self {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 5px;
+    gap: 10px;
+   
+
+}
+
+.w-img {
+    height: 40px;
+    width: 40px;
+}
+
+.w-img img {
+    height: 100%;
+    width: 100%;
+}
+
+
+.w-name {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+   
+} */
+
+
+.wishlist-items {
+    /* margin: 20px 20px 20px 10px; */
+    width: 100%;
+    /* background-color: yellow; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.w-heading {
+    width: 100%;
+    font-size: larger;
+    font-weight: 900;
+    text-align: center;
+    margin-bottom: 20px;
+    /* background-color: azure; */
+
+}
+
+.w-item {
+    width: 95%;
+    height: 100%;
+    /* background-color: bisque; */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+}
+
+@media screen and (max-width: 600px) {
+    .wishlist-items {
+        width: 100%;
+    }
+}

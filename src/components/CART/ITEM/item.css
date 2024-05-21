@@ -1,0 +1,152 @@
+.item-body {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 50px;
+    height: 200px;
+    width: 95%;
+    gap: 1.3rem;
+    position: relative;
+    margin: 10px;
+    /* border: 2px solid black; */
+    box-shadow: 2px 2px 15px -10px black;
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+}
+
+input[type='checkbox'] {
+    width: 16px;
+    height: 16px;
+}
+
+.item-img {
+    padding: 10px;
+    height: 80%;
+    width: 15%;
+    /* background-color: rgb(255, 250, 243); */
+}
+
+.cart-single-image {
+    width: 100%;
+    height: 100%;
+}
+
+.item-img img {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
+
+.item-disc {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 1.3rem;
+    padding-left: 14px;
+}
+
+.item-disc h3 {
+    text-align: start;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+
+.item-price {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+.i-price {
+    font-size: 1.3rem;
+    font-weight: 600;
+
+}
+
+.i-discount {
+    text-decoration: line-through;
+    color: rgba(0, 0, 0, 0.6);
+    align-self: flex-end;
+}
+
+.i-discountedPer {
+    color: green;
+    font-weight: 600;
+    font-size: 1.1rem;
+    align-self: flex-end;
+}
+
+
+.qty-modify {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 1.5rem;
+
+}
+
+.heart-before {
+    color: rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+
+}
+
+.heart-after {
+    color: red;
+    cursor: pointer;
+}
+
+.heart-before:active,
+.heart-after:active {
+    transform: scale(1.3);
+    transition: 0.3s;
+}
+
+
+
+@media screen and (max-width: 1350px) {
+    .item-body {
+        padding-left: 20px;
+    }
+
+
+}
+
+@media screen and (max-width: 1250px) {
+    .price {
+        top: 50%;
+    }
+
+    .item-body {
+        height: 180px;
+    }
+
+    .item-img {
+        min-width: 130px;
+    }
+
+}
+
+@media screen and (max-width: 800px) {
+    .item-body {
+        height: 120px;
+    }
+
+    .item-disc {
+        gap: 0.3rem;
+    }
+
+    .item-img {
+        min-width: 100px;
+    }
+}

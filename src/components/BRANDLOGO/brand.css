@@ -1,0 +1,55 @@
+.brandlogodiv {
+    margin: 15px 15px 15px 15px;
+    display: flex;
+    justify-content: space-around;
+    /* min-height: 130px; */
+    align-items: center;
+    border-radius: 23px;
+    flex-wrap: wrap;
+    background-color: white;
+    padding: 5px;
+
+
+}
+
+.brandlogodiv .imgs {
+    height: 100px;
+    width: 100%;
+}
+
+.brandlogodiv .logo1,
+.logo2,
+.logo3,
+.logo4,
+.logo5,
+.logo6 {
+    width: 16%;
+}
+
+.brandlogodiv .imgs img {
+    height: 100%;
+    width: 100%;
+    border-radius: 25%;
+}
+
+@media screen and (max-width:800px) {
+    .brandlogodiv .imgs {
+        height: 70px;
+    }
+}
+
+@media screen and (max-width:490px) {
+
+    .brandlogodiv .logo1,
+    .logo2,
+    .logo3,
+    .logo4,
+    .logo5,
+    .logo6 {
+        height: 50px;
+    }
+
+    .brandlogodiv .imgs {
+        height: 45px;
+    }
+}

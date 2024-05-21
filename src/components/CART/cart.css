@@ -1,0 +1,148 @@
+.cart {
+    width: 100vw;
+    padding: 20px;
+    min-height: 500px;
+    /* border: 2px solid green; */
+    font-family: 'Open Sans', sans-serif;
+}
+
+.cart-body {
+    width: 100%;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    /* border: 5px solid black; */
+}
+
+.shopping-cart {
+    padding: 10px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    /* border: 2px solid red; */
+
+}
+
+.total-items {
+    position: relative;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+
+.sub-total {
+    margin-top: 10px;
+    position: sticky;
+    top: 76px;
+    width: 28%;
+    min-width: 200px;
+    /* border: 8px solid yellow; */
+    min-height: 250px;
+    box-shadow: 2px 2px 25px -13px black;
+    padding: 10px;
+}
+
+.total {
+    /* border: 2px solid green; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    padding: 10px;
+}
+
+.t-head {
+    padding: 10px;
+}
+
+.t-head h2 {
+    font-weight: 600;
+}
+
+.t-price,
+.t-discount,
+.t-totalprice {
+    padding: 5px;
+    font-size: 1.2rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.price-disc {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    /* box-shadow: 0px 5px 9px -8px black; */
+}
+
+.t-proceedtopay {
+    margin: 10px;
+}
+
+.t-proceedtopay p {
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+.t-proceedtopay button {
+    background-color: #ffbd03;
+    padding: 6px;
+    text-align: center;
+    border-radius: 7px;
+    width: 90%;
+    border: none;
+}
+
+
+.t-proceedtopay button:hover {
+    box-shadow: 5px 5px 25px -10px rgba(0, 0, 0, 1);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+
+.heading {
+    padding: 10px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 5px;
+    /* border: 2px solid pink; */
+}
+
+.items {
+    /* padding: 10px; */
+    gap: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid orange; */
+}
+
+.cart-payment {
+    height: 100px;
+    width: 100px;
+    /* border: 2px solid lightcoral; */
+}
+
+@media screen and (max-width: 800px) {
+    .sub-total {
+        display: none;
+    }
+
+}
