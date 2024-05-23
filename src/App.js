@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import Navbar from './components/NAVBAR/Navbar';
 import Footer from './components/FOOTER/Footer';
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router,  Routes, Route } from "react-router-dom";
 import Login from './pages/LOGIN/Login';
 import Main from './components/MAIN-BODY/Main';
 import { useGlobalLogin } from './context/login-context';
@@ -12,17 +12,11 @@ import SingleProduct from './components/SINGLE-PRODUCT/SingleProduct';
 import Wishlist from './components/WISHLIST/Wishlist';
 import Allproduct from './pages/ALLPRODUCT/Allproduct';
 import Search from './pages/SEARCH/Search';
-
-
-
 function App() {
-
+  // this is app React.
   const myName = useGlobalLogin();
-
   return (
-
     <div className="App">
-
       <Navbar />
       <Routes>
         <Route path='/' element={<Main />} />
@@ -36,7 +30,6 @@ function App() {
       <Footer />
       <ToastContainer />
     </div>
-
   );
 }
 
